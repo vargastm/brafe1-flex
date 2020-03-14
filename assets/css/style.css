@@ -122,11 +122,19 @@ body {
 .products {
 	background: #E7E4D8;
 	border-top: 3px solid #D6D3C8;
-	border-bottom: 3px solid #D6D3C8;
+  border-bottom: 3px solid #D6D3C8;
+  padding: 60px 0;
+}
+
+.products-item {
+  margin: 0 10px 40px 10px;
+  flex: 1;
 }
 
 .products-item h2 {
-	font-size: 2.25em;
+  font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .products-item h2::before {
@@ -137,7 +145,8 @@ body {
 	background: currentColor;
 	border-radius: 50%;
 	border: 5px solid #E7E4D8;
-	box-shadow: 0 0 0 5px currentColor;
+  box-shadow: 0 0 0 5px currentColor;
+  margin: 20px auto;
 }
 
 h2.products-paulista::before {
@@ -164,17 +173,42 @@ h2.products-mineiro::before {
 	text-align: center;
 	font-size: 1.125em;
 	font-weight: bold;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  display: block;
+  width: 180px;
+  padding: 15px 0;
+  margin: 20px auto 0 auto;
 }
 
 /* Locations */
+.locations {
+  padding: 60px 0;
+}
+
+.location-img, .location-info {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.location-img img {
+  display: block;
+  max-width: 100%;
+}
+
+.location-item {
+  margin-bottom: 40px;
+}
+
 .location-item h2 {
-	font-size: 2.25em;
+  font-size: 2.25em;
+  margin-bottom: 20px;
 }
 
 .location-item p {
 	font-size: 1.125em;
-	line-height: 1.4em;
+  line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 40px;
 }
 
 .location-item a {
@@ -182,7 +216,8 @@ h2.products-mineiro::before {
 	text-transform: uppercase;
 	text-decoration: none;
 	border: 3px solid;
-	color: #252525;
+  color: #252525;
+  padding: 10px 20px;
 }
 
 /* Newsletter */
