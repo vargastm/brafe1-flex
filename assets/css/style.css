@@ -31,8 +31,13 @@ body {
 	font-size: 1.125em;
 }
 
+.menu-logo {
+	margin: 0 10px;
+}
+
 .menu-nav {
-  flex: 1;
+	flex: 1;
+	margin: 0 10px;
   align-self: center;
 }
 
@@ -290,4 +295,44 @@ h2.products-mineiro::before {
 
 .footer-img {
 	margin: 0 10px;
+}
+
+@media (max-width: 739px) {
+	.container {
+		flex-direction: column;
+		max-width: 300px;
+	}
+
+	.menu-nav {
+		margin: 0px;
+	}
+
+	.menu-logo {
+    margin: 10px auto;
+	}
+
+	.menu-nav ul li a {
+		padding: left 0px;
+	}
+
+	.intro {
+		padding: 60px 0;
+	}
+
+	.newsletter-information {
+		margin: 0 0 20px 0;
+	}
+
+	.newsletter form {
+		margin: 0;
+	}
+
+	.footer-img, .footer p {
+		margin: 10px 0px;
+	}
+
+	.location-img, .location-info, .products-item, .about-item {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 }
