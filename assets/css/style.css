@@ -1,0 +1,232 @@
+/* Reset */
+body, h1, h2, h3, p, ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: Georgia, serif;
+	color: #252525;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Menu */
+.menu {
+  background: #252525;
+  padding: 15px 0;
+}
+
+.menu-nav a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 1.125em;
+}
+
+.menu-nav {
+  flex: 1;
+  align-self: center;
+}
+
+.menu-nav ul {
+  float: right;
+  display: flex;
+  list-style: none;
+}
+
+.menu-nav ul li a {
+  padding: 10px;
+}
+
+/* Introduction */
+.introduction {
+	background: url('../images/bg-intro.jpg') no-repeat center center;
+	background-size: cover;
+  color: #FFFFFF;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.introduction h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.introduction h1::after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 4px;
+  background: #FFFFFF;
+  margin: 10px auto;
+}
+
+.introduction p {
+	font-style: italic;
+	font-size: 1.125em;
+}
+
+/* About */
+.about {
+  padding: 60px 0;
+}
+
+.about h2 {
+  font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-item {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.about-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.about-item h3 {
+	font-size: 2.25em;
+	line-height: 1em;
+	background: #252525;
+	color: #FFFFFF;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+  position: relative;
+  width: 220px;
+  padding: 5px 0 10px 0;
+  top: -25px;
+}
+
+.about > p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 460px;
+  text-align: center;
+}
+
+/* Products */
+.products {
+	background: #E7E4D8;
+	border-top: 3px solid #D6D3C8;
+	border-bottom: 3px solid #D6D3C8;
+}
+
+.products-item h2 {
+	font-size: 2.25em;
+}
+
+.products-item h2::before {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: currentColor;
+	border-radius: 50%;
+	border: 5px solid #E7E4D8;
+	box-shadow: 0 0 0 5px currentColor;
+}
+
+h2.products-paulista::before {
+	color: #492901;
+}
+
+h2.products-carioca::before {
+	color: #C17139;
+}
+
+h2.products-mineiro::before {
+	color: #D7A54D;
+}
+
+.products-item p {
+	font-size: 0.875em;
+	line-height: 1.4em;
+}
+
+.products-button {
+	border: 3px solid #252525;
+	color: #252525;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Locations */
+.location-item h2 {
+	font-size: 2.25em;
+}
+
+.location-item p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+}
+
+.location-item a {
+	font-size: 1.125em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px solid;
+	color: #252525;
+}
+
+/* Newsletter */
+.newsletter {
+	background: #E7E4D8;
+}
+
+.newsletter-info h2 {
+	font-size: 2.25em;
+}
+
+.newsletter-info p {
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.newsletter form label {
+	display: none;
+}
+
+.newsletter input {
+	border: 3px solid #252525;
+	background: none;
+	font-size: 1.5em;
+	font-style: italic;
+	font-family: Georgia, serif;
+}
+
+.newsletter button {
+	background: #252525;
+	border: none;
+	font-family: Georgia, serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+/*Footer*/
+.footer {
+	background: #D6D3C8;
+}
+
+.footer p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+} 
